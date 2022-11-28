@@ -1,0 +1,25 @@
+[includeIf "gitdir:~/"]
+    path = ~/.gitconfig-user
+[alias]
+    co = checkout
+    b = branch
+    ci = commit
+    s = status
+    aa = add .
+    d = diff
+    du = diff @{upstream}
+    f = fetch
+    t = log --oneline --graph --color --all --decorate
+    tree = log --oneline --graph --color --all --decorate
+    amend = commit --amend --no-edit
+    puff = pull --ff
+    pure = pull --rebase
+    uncommit = reset HEAD~ --soft
+    fwl = push --force-with-lease
+[push]
+    default = current 
+[core]
+    pager = less -F -X
+    editor = code --wait
+    excludesfile = ~/.gitignore
+    ignorecase = false

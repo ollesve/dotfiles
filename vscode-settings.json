@@ -1,0 +1,14 @@
+{
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "eslint.run": "onSave",
+    "typescript.validate.enable": false,
+    "javascript.validate.enable": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "window.zoomLevel": 1,
+    "npm.keybindingsChangedWarningShown": true
+}
