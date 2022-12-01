@@ -1,8 +1,3 @@
-# TODO: Clean this up
-# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 function git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
@@ -14,6 +9,11 @@ function folder() {
 
 function time() {
  basename "`pwd`"
+}
+
+function zshu() {
+ source ~/.profile
+ source ~/.zshrc
 }
 
 COLOR_DEF=$'\e[0m'

@@ -6,6 +6,7 @@ echo "Symlinking dotfiles in $ABSOLUTE_PATH to $HOME"
 ln -sf $ABSOLUTE_PATH/gitconfig $HOME/.gitconfig
 ln -sf $ABSOLUTE_PATH/gitignore $HOME/.gitignore
 ln -sf $ABSOLUTE_PATH/profile $HOME/.profile
+ln -sf $ABSOLUTE_PATH/zshrc $HOME/.zshrc
 ln -sf $ABSOLUTE_PATH/editorconfig $HOME/.editorconfig
 cp $ABSOLUTE_PATH/gitconfig-user $HOME/.gitconfig-user
 
