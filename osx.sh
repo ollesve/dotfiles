@@ -41,12 +41,6 @@ cd ~/.zsh
 curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 
-echo "Installing Oh My ZSH"
-rm ~/.zshrc
-ZSH= sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-rm ~/.zshrc
-cd $ABSOLUTE_PATH
-
 echo "##########################################"
 echo "#             Setup completed            #"
 echo "##########################################"
