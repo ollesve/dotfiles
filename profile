@@ -1,18 +1,19 @@
 
 function git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+  git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
 
 function folder() {
- basename "`pwd`"
+  basename "`pwd`"
 }
 
 function get_time() {
- date +%H:%M
+  date +%H:%0M
 }
 
 function shs() {
- source ~/.zshrc
+  source ~/.profile
+  source ~/.zshrc
 }
 
 COLOR_DEF=$'\e[0m'
