@@ -36,12 +36,6 @@ brew install the_silver_searcher
 echo "Installing editorconfig core"
 brew install editorconfig
 
-echo "Installing git-completion" # Not sure if this works
-mkdir -p ~/.zsh
-cd ~/.zsh
-curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
-
 echo "##########################################"
 echo "#             Setup completed            #"
 echo "##########################################"
