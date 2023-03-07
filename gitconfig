@@ -17,7 +17,7 @@
     uncommit = reset HEAD~ --soft
     fwl = push --force-with-lease
 [push]
-    default = current 
+    default = current
 [core]
     pager = less -F -X
     editor = code --wait
