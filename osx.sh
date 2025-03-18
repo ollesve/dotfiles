@@ -15,6 +15,7 @@ xcode-select —-install
 
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing VS code"
 brew install --cask visual-studio-code
