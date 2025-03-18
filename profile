@@ -27,5 +27,8 @@ export EDITOR="code"
 alias zshconfig="code ~/.zshrc"
 alias gitconfig="code ~/.gitconfig"
 alias sshconfig="code ~/.ssh/config"
+alias pip="pip3"
+alias python="python3"
+
 
 source /Users/ollesvensson/.docker/init-bash.sh || true # Added by Docker Desktop

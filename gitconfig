@@ -23,3 +23,5 @@
     editor = code --wait
     excludesfile = ~/.gitignore
     ignorecase = false
+[user]
+	email = olle_svensson@hotmail.com
