@@ -14,14 +14,7 @@ echo "Make sure xcode is installed"
 xcode-select —-install
 
 echo "Installing homebrew"
-/bin/zsh -c "$(curl -fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> $HOME/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-echo "Installing Google chrome"
-brew install --cask google-chrome
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Installing VS code"
 brew install --cask visual-studio-code
@@ -29,9 +22,6 @@ brew install --cask visual-studio-code
 echo "Installing nvm and node"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | NODE_VERSION=--lts zsh
 npm config set ignore-scripts true
-
-echo "Installing SilverSearcher (ag)"
-brew install the_silver_searcher
 
 echo "Installing editorconfig core"
 brew install editorconfig
