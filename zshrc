@@ -1,5 +1,8 @@
 source ~/.profile
 
+# Git worktree helpers: wt, wt-done, wt-list, wt-cd
+source "$HOME/Documents/code/dotfiles/worktree.zsh"
+
 export NVM_DIR="$HOME/.nvm"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOROOT/bin"
@@ -10,8 +13,6 @@ eval "$(ssh-agent -s)"
 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-source /Users/ollesvensson/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ollesvensson/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ollesvensson/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -31,3 +32,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export NODE_BINARY="$NVM_DIR/versions/node/v20.17.0/bin/node"
 
 
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
