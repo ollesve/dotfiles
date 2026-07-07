@@ -1,6 +1,7 @@
 # Git worktree helpers.
 #
-#   wt <branch>     create a worktree from origin/main and cd into it
+#   wt <branch>     create a worktree from origin/main, cd into it, and open
+#                   it in a new VS Code window
 #   wt-done         remove the worktree you're standing in
 #   wt-list         list all worktrees for the current repo
 #   wt-cd <query>   cd to a worktree whose path matches <query>
@@ -11,7 +12,8 @@
 WT_ROOT="${WT_ROOT:-$HOME/worktree}"
 
 # wt <branch> — create <branch> off a freshly fetched origin/main in a new
-# worktree at $WT_ROOT/<branch-with-slashes-as-dashes>, then cd into it.
+# worktree at $WT_ROOT/<branch-with-slashes-as-dashes>, cd into it, and open it
+# in a new VS Code window.
 # If <branch> already exists locally it is checked out instead of recreated.
 wt() {
   emulate -L zsh
@@ -48,6 +50,11 @@ wt() {
   fi
 
   cd "$dest" && print "wt: now on '$branch' in $PWD"
+
+  # Open the new worktree in a fresh VS Code window (if `code` is on PATH).
+  if command -v code >/dev/null 2>&1; then
+    code -n "$dest"
+  fi
 }
 
 # wt-done — remove the worktree you're currently in and return to the main
